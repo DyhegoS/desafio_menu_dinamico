@@ -1,0 +1,12 @@
+[
+ "31,Site de investimentos,,",
+ "33,Notícias,,31",
+ "47,Nacionais,/noticias-nacionais,33",
+ "49,Internacionais,/noticias-internacionais,33",
+ "53,Economia,,31",
+ "57,Bolsa de valores,,53",
+ "61,Ações,/acoes,57",
+ "65,Fundos imobiliários,/fii,57",
+ "72,Indicadores,/indicadores,53",
+ "75,Blog,/blog,53"
+] 

@@ -1,0 +1,14 @@
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\bin\Debug\net8.0\menu_dinamico.exe
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\bin\Debug\net8.0\menu_dinamico.deps.json
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\bin\Debug\net8.0\menu_dinamico.runtimeconfig.json
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\bin\Debug\net8.0\menu_dinamico.dll
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\bin\Debug\net8.0\menu_dinamico.pdb
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.AssemblyInfoInputs.cache
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.AssemblyInfo.cs
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.csproj.CoreCompileInputs.cache
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.dll
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\refint\menu_dinamico.dll
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.pdb
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.genruntimeconfig.cache
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\ref\menu_dinamico.dll
