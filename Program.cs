@@ -13,6 +13,7 @@ namespace Course
             foreach (string file in CsvFiles)
             {
                 string[] lines = File.ReadAllLines(file);
+                // Print(GenerateTree(lines));
                 GenerateTree(lines);
             }           
         }
@@ -40,13 +41,18 @@ namespace Course
                 {
                     if (Dict.ContainsKey(IdParent))
                     {
-
-                        tree.Add(entry, );
-                    } else {
-                        IPosition<MenuItem> root = tree.Add(entry.Value, null);
+                        IPosition<MenuItem>? parent = tree.Find(Dict[IdParent]);
+                        tree.Add(entry.Value, parent);
+                    }
+                    else
+                    {
+                        tree.Add(entry.Value, null);
                     }
                 }
+                
             }
+
+            
             return tree;
         }
 
