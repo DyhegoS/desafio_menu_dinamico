@@ -21,7 +21,8 @@ namespace Course
         static GenericTree<MenuItem> GenerateTree(string[] records)
         {
             GenericTree<MenuItem> tree = new GenericTree<MenuItem>();
-            Dictionary<int, MenuItem> Dict = new Dictionary<int, MenuItem>();
+            var Dict = new Dictionary<int, MenuItem>();
+            int IdParent = 0;
 
             foreach (string record in records)
             {
@@ -29,15 +30,16 @@ namespace Course
                 int Id = int.Parse(parts[0]);
                 string Text = parts[1];
                 string Route = parts[2];
-                int IdParent = 0;
                 if (!string.IsNullOrWhiteSpace(parts[3]))
                 {
                     IdParent = int.Parse(parts[3]);
                 }
 
-                Dict.Add(Id, new MenuItem(Text, Route));
+                Dict.Add(Id, new MenuItem(Text, Route));    
+                
+            }
 
-                foreach (KeyValuePair<int, MenuItem> entry in Dict)
+            foreach (KeyValuePair<int, MenuItem> entry in Dict)
                 {
                     if (Dict.ContainsKey(IdParent))
                     {
@@ -49,8 +51,6 @@ namespace Course
                         tree.Add(entry.Value, null);
                     }
                 }
-                
-            }
 
             
             return tree;

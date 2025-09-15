@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("menu_dinamico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04d9cb22a77fa0db5732b5e739cdbafd1aee4a7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c95d19e5bc9048888be4689be7cb9147953407dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("menu_dinamico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("menu_dinamico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
