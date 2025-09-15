@@ -12,38 +12,42 @@ namespace Course
 
             foreach (string file in CsvFiles)
             {
-                string[] lines = File.ReadAllLines(file); 
+                string[] lines = File.ReadAllLines(file);
                 GenerateTree(lines);
-                
-            }
+            }           
         }
 
         static GenericTree<MenuItem> GenerateTree(string[] records)
         {
-            GenericTree<MenuItem> myTree = new GenericTree<MenuItem>();
+            GenericTree<MenuItem> tree = new GenericTree<MenuItem>();
             Dictionary<int, MenuItem> Dict = new Dictionary<int, MenuItem>();
+
             foreach (string record in records)
             {
-                string cleanLine = record.Trim().Trim('[', ']', '"');
-
-                if (string.IsNullOrWhiteSpace(cleanLine))
-                    continue;
-
-                string[] parts = cleanLine.Split(',');
+                string[] parts = record.Split(',');
                 int Id = int.Parse(parts[0]);
                 string Text = parts[1];
                 string Route = parts[2];
                 int IdParent = 0;
-                if (parts[3] != '"'.ToString())
+                if (!string.IsNullOrWhiteSpace(parts[3]))
                 {
                     IdParent = int.Parse(parts[3]);
                 }
 
                 Dict.Add(Id, new MenuItem(Text, Route));
-                
 
+                foreach (KeyValuePair<int, MenuItem> entry in Dict)
+                {
+                    if (Dict.ContainsKey(IdParent))
+                    {
+
+                        tree.Add(entry, );
+                    } else {
+                        IPosition<MenuItem> root = tree.Add(entry.Value, null);
+                    }
+                }
             }
-            return myTree;
+            return tree;
         }
 
         public static void Print<T>(GenericTree<T> tree)
@@ -61,26 +65,6 @@ namespace Course
             foreach (IPosition<T> child in tree.Children(position))
             {
                 PrintRecursive(child, tree, depth + 1);
-            }
-        }
-
-        public static void PrintBfs<T>(GenericTree<T> tree)
-        {
-            IPosition<T>? root = tree.Root();
-            if (root == null)
-            {
-                return;
-            }
-            Queue<IPosition<T>> queue = new Queue<IPosition<T>>();
-            queue.Enqueue(root);
-            while (queue.Count > 0)
-            {
-                IPosition<T> position = queue.Dequeue();
-                Console.WriteLine(position.Element());
-                foreach (IPosition<T> child in tree.Children(position))
-                {
-                    queue.Enqueue(child);
-                }
             }
         }
     }

@@ -12,3 +12,4 @@ C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinami
 C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.pdb
 C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.genruntimeconfig.cache
 C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\ref\menu_dinamico.dll
+C:\Users\dyhego.silva\Documents\Curso Algoritmos\exercicios\Desafios\menu_dinamico\obj\Debug\net8.0\menu_dinamico.sourcelink.json

@@ -1,10 +1,8 @@
-[
- "722,Sistema de contabilidade,,",
- "812,Início,/,722",
- "825,Clientes,,722",
- "831,Cadastro,/clients,825",
- "835,Relatórios,/clients/reports,825",
- "903,Financeiro,,722",
- "912,Resumo,/fin/summary,903",
- "928,Relatórios,/fin/reports,903"
-] 
+722,Sistema de contabilidade, , 
+812,Início,/,722
+825,Clientes,,722
+831,Cadastro,/clients,825
+835,Relatórios,/clients/reports,825
+903,Financeiro,,722
+912,Resumo,/fin/summary,903
+928,Relatórios,/fin/reports,903
