@@ -13,8 +13,8 @@ namespace Course
             foreach (string file in CsvFiles)
             {
                 string[] lines = File.ReadAllLines(file);
-                // Print(GenerateTree(lines));
-                GenerateTree(lines);
+                Print(GenerateTree(lines));
+                Console.WriteLine("========================================================");
             }           
         }
 
@@ -22,36 +22,35 @@ namespace Course
         {
             GenericTree<MenuItem> tree = new GenericTree<MenuItem>();
             var Dict = new Dictionary<int, MenuItem>();
-            int IdParent = 0;
-
             foreach (string record in records)
             {
                 string[] parts = record.Split(',');
                 int Id = int.Parse(parts[0]);
                 string Text = parts[1];
-                string Route = parts[2];
+                string Route = "null";
+                if (!string.IsNullOrWhiteSpace(parts[2]))
+                {
+                    Route = parts[2];
+                } 
+                int IdParent = 0;
                 if (!string.IsNullOrWhiteSpace(parts[3]))
                 {
                     IdParent = int.Parse(parts[3]);
                 }
 
-                Dict.Add(Id, new MenuItem(Text, Route));    
-                
-            }
-
-            foreach (KeyValuePair<int, MenuItem> entry in Dict)
+                Dict.Add(Id, new MenuItem(Text, Route));
+        
+                if (Dict.ContainsKey(IdParent))
                 {
-                    if (Dict.ContainsKey(IdParent))
-                    {
-                        IPosition<MenuItem>? parent = tree.Find(Dict[IdParent]);
-                        tree.Add(entry.Value, parent);
-                    }
-                    else
-                    {
-                        tree.Add(entry.Value, null);
-                    }
+                    IPosition<MenuItem>? parent = tree.Find(Dict[IdParent]);
+                    tree.Add(Dict[Id], parent);
                 }
-
+                else
+                {
+                    tree.Add(Dict[Id], null);
+                }
+                
+            }        
             
             return tree;
         }
